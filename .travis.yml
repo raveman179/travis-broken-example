@@ -2,4 +2,8 @@ language: php
 php:
   - 8.0
   - hhvm
+  
+install:
+    - composer update phpunit/phpunit    # added
+    
 script: phpunit Test.php
